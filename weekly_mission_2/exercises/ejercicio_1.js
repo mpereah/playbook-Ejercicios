@@ -116,3 +116,48 @@ const hashtag = {
 
 console.log(hashtag.getFrase())
 console.log("unete a " + hashtag.getNotice())
+
+console.log("------------------FACEBOOK---------------------")
+
+const FacebookUser = {
+    nickname: "Martin",
+    age: 37,
+    mail: "mpereah@ejemplo.com",
+    numberTel: 1234567890,
+    getInfoGeneral: function(){
+        return `informacion general de usurio, Nombre: ${this.nickname}, Edad: ${this.age}, Email: ${this.mail}, numero de telefono: ${this.numberTel}`
+    }
+}
+
+console.log(FacebookUser.getInfoGeneral())
+
+console.log("-----------------------------------------------")
+
+const post = {
+    live: "Curso Launch X",
+    lastPost: "Node Js semana 2",
+    getInfo: function(){
+        return `Estamos transmitiendo en vivo: ${this.live}`
+    },
+    getpost: function(){
+        return `El post con mas vistas es: ${this.lastPost}`
+    }
+}
+console.log(post.getInfo())
+console.log(post.getpost()  +  post.live)
+console.log("----------------------------------------------")
+
+const biography = {
+    enquepiensas: "Escribe tu post",
+    transmitir: "Empezar a Transmitir en vivo",
+    fotos: "Agregar Fotos",
+    muro: "tienes 50 nuevas publicaciones de tus amigos",
+    getGeneral: function(){
+        return `accede a tu muro: ${this.muro}`
+    },
+    getDatos: function(){
+        return this.enquepiensas + this.transmitir + this.fotos
+    }
+}
+console.log(biography.getGeneral())
+console.log("esto es tu inico" + biography.getDatos())
